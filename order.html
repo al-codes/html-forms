@@ -1,7 +1,6 @@
-<! This page is written in HTML>
+<!doctype html>
 <html>
 <head>
-    <! Meta data stuff>
     <title>Order a Melongram!</title>
 </head>
 
@@ -65,41 +64,41 @@
                 </select>
             </div>
                 
-            <div>
-               
-                  When should we deliver?
-                  
-                         <input type="radio" name="time" value="am">
-                        <label>Morning</label>
-                    
-                        <input type="radio" name="time" value="pm">
-                        <label>Evening</label>
-                   
-                        <input type="radio" name="time" value="any">
-                        <label>Any time</label>
-                   
-            
-        </fdiv>
+        <div>
+            <fieldset>
+                <legend>When should we deliver?</legend>
+                
+                    <input type="radio" name="time" value="am" id="radio-am"> 
+                    <label for="radio-am">Morning</label>
+                
+                    <input type="radio" name="time" value="pm" id="radio-pm">
+                    <label for="radio-pm">Evening</label>
+                
+                    <input type="radio" name="time" value="any" id="radio-any">
+                    <label for="radio-any">Any time</label>
+                
+            </fieldset>
+        </div>
 
             <div>
                 <p>
                     <label for="message"> Enter your message:</label>
                 </p>
-               
+                
                 <textarea name="message" id="message"></textarea>
             </div>
 
             <div>
+                <fieldset>
                 
-                    Subscribe to our newsletter
+                    <legend>Subscribe to our newsletter</legend> 
                     <input type ="checkbox" name="subscribe" value="yes" id="sub-yes">
                     <label for="sub-yes">Yes</label>
-                
+                </fieldset>
             </div>
 
 
             <input type="submit">
-
         </form>
     </section>
 </body>
